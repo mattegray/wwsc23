@@ -5,6 +5,7 @@ export const env = createEnv({
   server: {
     // This is optional because it's only used in development.
     // See https://next-auth.js.org/deployment.
+    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
   },
   client: {
     NEXT_PUBLIC_APP_URL: z.string().min(1),
