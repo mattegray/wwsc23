@@ -1,4 +1,3 @@
-import { User } from "@prisma/client"
 import type { Icon } from "lucide-react"
 
 import { Icons } from "@/components/icons"
@@ -57,9 +56,3 @@ export type SubscriptionPlan = {
   description: string
   stripePriceId: string
 }
-
-export type UserSubscriptionPlan = SubscriptionPlan &
-  Pick<User, "stripeCustomerId" | "stripeSubscriptionId"> & {
-    stripeCurrentPeriodEnd: number
-    isPro: boolean
-  }

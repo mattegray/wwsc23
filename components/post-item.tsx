@@ -1,12 +1,15 @@
 import Link from "next/link"
-import { Post } from "@prisma/client"
 
 import { formatDate } from "@/lib/utils"
 import { Skeleton } from "@/components/ui/skeleton"
-import { PostOperations } from "@/components/post-operations"
 
-interface PostItemProps {
-  post: Pick<Post, "id" | "title" | "published" | "createdAt">
+type PostItemProps = {
+  post: {
+    id: number;
+    title: string;
+    published: boolean;
+    createdAt: Date;
+  }
 }
 
 export function PostItem({ post }: PostItemProps) {
@@ -25,7 +28,6 @@ export function PostItem({ post }: PostItemProps) {
           </p>
         </div>
       </div>
-      <PostOperations post={{ id: post.id, title: post.title }} />
     </div>
   )
 }
