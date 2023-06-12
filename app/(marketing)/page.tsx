@@ -48,7 +48,7 @@ export default async function IndexPage() {
                   <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
                 </svg>
                 <div className="space-y-2 pl-6">
-                  <h2 className="font-bold text-4xl">목사님 특강/저녁 집회</h2>
+                  <h2 className="text-4xl font-bold">목사님 특강/저녁 집회</h2>
                   <p className="text-lg text-muted-foreground">
                     App dir, Routing, Layouts, Loading UI and API routes.
                   </p>
@@ -61,7 +61,7 @@ export default async function IndexPage() {
               <div className="flex h-[180px] flex-row  rounded-md p-8">
                 <Icons.clock size={48}/>
                 <div className="space-y-2 pl-6">
-                  <h2 className="font-bold text-4xl">Time Table</h2>
+                  <h2 className="text-4xl font-bold">Time Table</h2>
                   <p className="text-lg text-muted-foreground">
                     App dir, Routing, Layouts, Loading UI and API routes.
                   </p>
@@ -74,7 +74,7 @@ export default async function IndexPage() {
               <div className="flex h-[180px] flex-row  rounded-md p-8">
                 <Icons.monitor size={48}/>
                 <div className="space-y-2 pl-6">
-                  <h2 className="font-bold text-4xl">Sessions</h2>
+                  <h2 className="text-4xl font-bold">Sessions</h2>
                   <p className="text-lg text-muted-foreground">
                     App dir, Routing, Layouts, Loading UI and API routes.
                   </p>
@@ -87,7 +87,7 @@ export default async function IndexPage() {
               <div className="flex h-[180px] flex-row  rounded-md p-8">
                 <Icons.book size={48}/>
                 <div className="space-y-2 pl-6">
-                  <h2 className="font-bold text-4xl">Materials</h2>
+                  <h2 className="text-4xl font-bold">Materials</h2>
                   <p className="text-lg text-muted-foreground">
                     App dir, Routing, Layouts, Loading UI and API routes.
                   </p>
@@ -100,7 +100,7 @@ export default async function IndexPage() {
               <div className="flex h-[180px] flex-row  rounded-md p-8">
                 <Icons.globe size={48}/>
                 <div className="space-y-2 pl-6">
-                  <h2 className="font-bold text-4xl">Beyond We Will</h2>
+                  <h2 className="text-4xl font-bold">Beyond We Will</h2>
                   <p className="text-lg text-muted-foreground">
                     App dir, Routing, Layouts, Loading UI and API routes.
                   </p>
@@ -113,7 +113,7 @@ export default async function IndexPage() {
               <div className="flex h-[180px] flex-row  rounded-md p-8">
                 <Icons.users size={48}/>
                 <div className="space-y-2 pl-6">
-                  <h2 className="font-bold text-4xl">Our Team</h2>
+                  <h2 className="text-4xl font-bold">Our Team</h2>
                   <p className="text-lg text-muted-foreground">
                     App dir, Routing, Layouts, Loading UI and API routes.
                   </p>
