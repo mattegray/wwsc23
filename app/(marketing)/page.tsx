@@ -24,8 +24,8 @@ export default async function IndexPage() {
             세상에 던지는 승부수
           </h1>
           <blockquote className="max-w-[42rem] leading-normal text-muted-foreground sm:text-base sm:leading-8">
-            <em>"백성이 여호수아에게 말하되 우리 하나님 여호와를 우리가 섬기고<br />
-            그의 목소리를 우리가 청종하리이다 하는지라"<br />
+            <em>&quot;백성이 여호수아에게 말하되 우리 하나님 여호와를 우리가 섬기고<br />
+            그의 목소리를 우리가 청종하리이다 하는지라&quot;<br />
             여호수아 24:24</em>
           </blockquote>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
