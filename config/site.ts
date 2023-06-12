@@ -1,13 +1,12 @@
 import { SiteConfig } from "types"
 
 export const siteConfig: SiteConfig = {
-  name: "Taxonomy",
+  name: "WWSC23",
   description:
-    "An open source application built using the new router, server components and everything new in Next.js 13.",
-  url: "https://tx.shadcn.com",
-  ogImage: "https://tx.shadcn.com/og.jpg",
+    "An application for WWSC23 (We Will Summer Camp 2023)",
+  url: "https://wwsc23.vercel.app",
+  ogImage: "https://wwsc23.vercel.app/og.jpg",
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/taxonomy",
+    github: "https://github.com/mattegray/wwsc23",
   },
 }
