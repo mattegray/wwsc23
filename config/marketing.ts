@@ -8,19 +8,19 @@ export const marketingConfig: MarketingConfig = {
     },
     {
       title: "Time Table",
-      href: "/blog",
+      href: "/timetable",
     },
     {
       title: "Sessions",
-      href: "/blog",
+      href: "/sessions",
     },
     {
       title: "Materials",
-      href: "/blog",
+      href: "/materials",
     },
     {
       title: "Beyond We Will",
-      href: "/blog",
+      href: "/beyond",
     },
   ],
 }
