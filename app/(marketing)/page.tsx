@@ -3,6 +3,7 @@ import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
+import { Icons } from "@/components/icons"
 
 export default async function IndexPage() {
 
@@ -10,160 +11,130 @@ export default async function IndexPage() {
     <>
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
-          <Link
-            href={siteConfig.links.twitter}
-            className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
-            target="_blank"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 2401.37 876.94"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1"
+            className="h-14 fill-current sm:h-24 sm:pb-4 md:h-28 md:pb-6 lg:h-40 lg:pb-8"
           >
-            Follow along on Twitter
-          </Link>
+            <path d="M1878.55,714.36c13.81,59.1-38.65,79.95-67.89,39.5-3-5.15-28.93-51.82-17.16-104.35,6.42-28.63-10.19-52.63-15.43-59.3-13.4-17.05-10.44-41.74,6.62-55.14,17.05-13.4,41.74-10.44,55.14,6.62,10.64,13.55,44.29,62.61,30.31,125-4.28,19.09,4.73,41.09,8.57,47.96l-.17-.29ZM608.41,192.72c-16.11-14.52-40.94-13.23-55.46,2.88-14.47,16.06-13.24,40.77,2.72,55.31,.67,.95,9.96,15.43,2.79,68.53-4.58,33.94-13.4,64.05-13.48,64.33-.05,.18-.11,.37-.16,.55-.14,.48-13.74,48.89-30.66,100.85-4.61,14.17-8.83,26.63-12.67,37.6-14.41,26.97-33.55,68.89-39.85,81.07-2.51,3.93-11.12,20.12-12.9,23.12-8.78,15.98-20.33,31.45-27.66,48.44-3.81,8.83-7.51,17.71-11.22,26.58-2.06-2.45-4.14-4.9-6.24-7.32-3.01-95.71-4.69-163.82-4.24-173.16,1.09-21.9-1.13-54.83-1.39-58.51-1.37-19.6-17.02-35.17-36.62-36.45-50.62-3.3-118.51,42.03-208.93,106.43-23.13,16.48-55.98,39.87-73.74,49.73,.5-13,2.69-38.41,9.18-54.63,11.36-28.4,16.32-83.29,18.13-110.02,1.75-5.04,2.51-10.51,2.03-16.17-4.55-53.88-.73-109.49,11.36-165.28,4.59-21.2-8.87-42.1-30.07-46.7-21.2-4.6-42.1,8.87-46.7,30.07-12.85,59.3-17.46,118.59-13.75,176.46-.27,1.56-.46,3.14-.54,4.76-1.55,30.56-6.73,81.07-13.38,97.71C.99,533.8,.08,579.31,.03,587.38c-1.08,35.51,23.3,74.51,71.09,77.54,1.11,.07,2.22,.11,3.34,.11,26.83,0,56.61-20.42,123.53-68.09,31.38-22.35,66.94-47.68,98.21-66.18,9.59-5.67,17.78-10.11,24.74-13.57,0,.13-.01,.26-.02,.38-.88,17.53,2.86,139.31,5.17,210.34,.59,18.08,9.33,35.02,23.57,46.02l42.19,38.69c1.39,1.28,2.88,2.45,4.44,3.52,10.17,6.93,22.12,10.5,34.15,10.5,7.01,0,14.04-1.21,20.77-3.67,18.29-6.69,32.34-21.89,37.56-40.65,2.94-10.54,6.03-23.56,9.3-37.35,4.46-18.81,9.52-40.12,14.93-58.14,7.1-23.61,11.57-30.67,12.49-31.96,11.96-12.59,28.79-39.81,62.34-142.35,17.45-53.35,31.29-102.36,32.52-106.73,1.13-3.87,11.15-38.76,16.28-78.54,8.47-65.76-.76-109.76-28.23-134.52Zm371.45,296.01c2.38,22.83-4.63,44.72-20.28,63.29-33.69,39.98-99.26,54.42-132.7,56.65-9.85,.66-22.4,2.43-35.69,4.31-42.52,6-89.69,12.66-123.67-4.33-5.44,4.48-6.65,9.67-6.79,17.54-.02,.87,.14,21.96,45.67,79.65,25.67,32.53,51.61,58.66,51.86,58.92,15.3,15.37,15.25,40.24-.13,55.54-7.66,7.63-17.69,11.44-27.71,11.44s-20.16-3.86-27.83-11.57c-1.19-1.19-29.42-29.64-57.86-65.68-43.27-54.83-63.14-96.05-62.54-129.71,.59-33.1,13.86-60.48,38.37-79.16,18.57-14.15,39.48-20.36,54.74-24.9,3.77-1.12,7.35-2.18,9.86-3.08,11.28-5.4,51.72-38.8,71.23-54.92,28.84-23.83,47.14-38.8,59.46-46.09,28.46-16.85,77.11-15.87,113.15,2.27,29.65,14.92,47.71,39.72,50.84,69.83Zm-78.12,8.14c-.11-1.08-.35-3.33-5.91-6.65-13.56-8.09-34.38-7.91-40.49-5.68-8.15,5.06-30.71,23.69-48.91,38.73-4.2,3.47-8.22,6.79-12.09,9.96,9.57-1.28,18.72-2.37,27.31-2.94,30.74-2.05,66.39-15.28,77.86-28.89,2.4-2.85,2.28-3.95,2.22-4.54ZM1597.7,228.11c-15.35-58.76-30.54-106.25-45.15-141.13-16.94-40.48-39.49-82.43-78.23-86.74-21.58-2.4-40.97,13.14-43.37,34.69-2.11,19.03,9.74,36.39,27.37,41.85,6.32,7.23,31.35,43.27,68.26,190.28,23.13,92.1,40.24,185.9,42.92,210.35,5.44,49.61-6.25,154.72-16.48,194.44-3.48,13.53-13.02,32.54-23,49.32-3.17-5.6-6.74-11.76-10.75-18.55-16.54-28.04-39.31-64.69-67.7-108.93-48.1-74.98-96.49-147.11-96.97-147.83-9.11-13.56-25.66-20.07-41.56-16.35-15.91,3.73-27.84,16.91-29.98,33.11-2.83,21.5-25.19,80.56-79.46,181.86-13.51,25.22-26.45,48.29-38.15,68.46-2.47-11.79-5.17-23.75-7.95-35.68-.98-4.19-1.82-7.81-2.26-9.89-1.83-8.52-6.39-20.88-14.96-43.79-8.95-23.92-29.89-79.89-29.94-95.08,1.44-35.05-20.74-119.85-27.57-145.03-5.68-20.93-27.26-33.29-48.19-27.61-20.93,5.68-33.29,27.26-27.61,48.19,12.49,46.04,25.57,105.48,24.9,121.22-1.16,27.25,13.72,69.34,34.85,125.83,4.75,12.69,10.66,28.48,11.75,32.87,.59,2.75,1.45,6.45,2.54,11.11,18.43,79.1,19.67,109.05,17.47,120.25-4.49,22.86,7.92,36.12,13.46,40.75,7.28,6.09,16.38,9.27,25.62,9.27,4.94,0,9.93-.91,14.7-2.77,12.54-4.88,21.32-12.32,52.84-62.98,18.65-29.97,40.38-67.58,61.19-105.91,22.8-41.99,48.6-92.19,67.62-136.9,14.11,21.46,30.31,46.28,46.65,71.69,80.55,125.21,95.15,156.7,97.75,163.53,3.6,24.73,22.07,37.25,39.43,38.68,24.56,2.02,45-14.27,72.94-58.16,6.9-10.83,30.04-48.7,38.38-81.08,12.12-47.06,25.23-161.26,18.5-222.6-3.29-29.95-23.32-139.03-49.89-240.73Zm551.07,380.13c-16.26-60.23-46.54-172.35-47.98-223.69-2.14-76.06-46.24-221.16-48.11-227.3-6.34-20.74-28.29-32.42-49.03-26.08-20.74,6.34-32.42,28.29-26.08,49.03,11.92,39,43.18,152.14,44.71,206.55,1.58,55.95,25.89,150.21,50.67,241.95,4.75,17.6,8.86,32.8,10.92,41.48,3.85,16.17,7.88,47.62,7.64,78.45-.3,37.09-6.54,53.76-9.28,57.71-16.83,12.72-20.64,36.6-8.39,53.96,7.65,10.84,19.79,16.63,32.12,16.63,7.83,0,15.73-2.33,22.61-7.19,26.2-18.49,39.72-55.28,41.33-112.45,1.13-40.06-4.02-81.75-9.63-105.3-2.34-9.83-6.38-24.8-11.5-43.76ZM2374.36,52.8c-6.63-20.63-28.7-31.98-49.35-25.38-20.64,6.6-32.03,28.7-25.45,49.34,.33,1.03,32.52,103.78,20.59,207.54-12.52,108.8-22.38,252.64-23.46,342.01-.26,21.69,17.11,39.48,38.8,39.74,.16,0,.32,0,.48,0,21.47,0,39-17.27,39.26-38.8,1.05-87.04,10.7-227.5,22.95-333.98,13.92-121.04-22.27-235.66-23.82-240.48Zm-553.13,365.68c-1.57-6.28-3.14-12.56-4.71-18.83-2.33-9.33-9.61-18.39-17.84-23.2-8.32-4.87-20.59-6.93-29.92-3.91-9.4,3.04-18.46,8.86-23.2,17.84-4.95,9.37-6.52,19.49-3.91,29.92,1.57,6.28,3.14,12.56,4.71,18.83,2.33,9.33,9.61,18.39,17.84,23.2,8.32,4.87,20.59,6.93,29.92,3.91,9.4-3.04,18.46-8.86,23.2-17.84,4.95-9.37,6.52-19.49,3.91-29.92Z"></path>
+          </svg>
           <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
-            An example app built using Next.js 13 server components.
+            세상에 던지는 승부수
           </h1>
+          <blockquote className="max-w-[42rem] leading-normal text-muted-foreground sm:text-base sm:leading-8">
+            <em>&quot;백성이 여호수아에게 말하되 우리 하나님 여호와를 우리가 섬기고<br />
+            그의 목소리를 우리가 청종하리이다 하는지라&quot;<br />
+            여호수아 24:24</em>
+          </blockquote>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            I&apos;m building a web app with Next.js 13 and open sourcing
-            everything. Follow along as we figure this out together.
+            여호수아는 하나님 앞에서 이스라엘 백성들에게 의지를 확인하고 하나님을 선택하도록 촉구합니다. 
+            비전의 이루어짐을 위해 하나님의 가르쳐주시는 것도 중요하지만, 동시에 우리의 ‘의지’가 필요합니다. 
+            함께 기도하여 하나님의 일하심에 우리도 응답하는 캠프가 되기를 바랍니다.
           </p>
-          <div className="space-x-4">
-            <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
-              Get Started
-            </Link>
-            <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
-              className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
-            >
-              GitHub
-            </Link>
-          </div>
         </div>
       </section>
       <section
         id="features"
         className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24"
       >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            Features
-          </h2>
-          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            This project is an experiment to see how a modern app, with features
-            like auth, subscriptions, API routes, and static pages would work in
-            Next.js 13 app dir.
-          </p>
-        </div>
-        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
-            <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-              <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current">
-                <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z" />
-              </svg>
-              <div className="space-y-2">
-                <h3 className="font-bold">Next.js 13</h3>
-                <p className="text-sm text-muted-foreground">
-                  App dir, Routing, Layouts, Loading UI and API routes.
-                </p>
+        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-1 md:max-w-[64rem] md:grid-cols-2">
+          <Link href="/">
+            <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
+              <div className="flex h-[180px] flex-row  rounded-md p-8">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 fill-current">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                </svg>
+                <div className="space-y-2 pl-6">
+                  <h2 className="text-4xl font-bold">목사님 특강/저녁 집회</h2>
+                  <p className="text-lg text-muted-foreground">
+                    App dir, Routing, Layouts, Loading UI and API routes.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
-            <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-              <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current">
-                <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.167 2.167 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44a23.476 23.476 0 0 0-3.107-.534A23.892 23.892 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442a22.73 22.73 0 0 0-3.113.538 15.02 15.02 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87a25.64 25.64 0 0 1-4.412.005 26.64 26.64 0 0 1-1.183-1.86c-.372-.64-.71-1.29-1.018-1.946a25.17 25.17 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25.245 25.245 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933a25.952 25.952 0 0 0-1.345-2.32zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493a23.966 23.966 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23.142 23.142 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39a25.819 25.819 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143a22.005 22.005 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295a1.185 1.185 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z" />
-              </svg>
-              <div className="space-y-2">
-                <h3 className="font-bold">React 18</h3>
-                <p className="text-sm">
-                  Server and Client Components. Use hook.
-                </p>
+          </Link>
+          <Link href="/">
+            <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
+              <div className="flex h-[180px] flex-row  rounded-md p-8">
+                <Icons.clock size={48}/>
+                <div className="space-y-2 pl-6">
+                  <h2 className="text-4xl font-bold">Time Table</h2>
+                  <p className="text-lg text-muted-foreground">
+                    App dir, Routing, Layouts, Loading UI and API routes.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
-            <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-              <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current">
-                <path d="M0 12C0 5.373 5.373 0 12 0c4.873 0 9.067 2.904 10.947 7.077l-15.87 15.87a11.981 11.981 0 0 1-1.935-1.099L14.99 12H12l-8.485 8.485A11.962 11.962 0 0 1 0 12Zm12.004 12L24 12.004C23.998 18.628 18.628 23.998 12.004 24Z" />
-              </svg>
-              <div className="space-y-2">
-                <h3 className="font-bold">Database</h3>
-                <p className="text-sm text-muted-foreground">
-                  ORM using Prisma and deployed on PlanetScale.
-                </p>
+          </Link>
+          <Link href="/">
+            <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
+              <div className="flex h-[180px] flex-row  rounded-md p-8">
+                <Icons.monitor size={48}/>
+                <div className="space-y-2 pl-6">
+                  <h2 className="text-4xl font-bold">Sessions</h2>
+                  <p className="text-lg text-muted-foreground">
+                    App dir, Routing, Layouts, Loading UI and API routes.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
-            <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-              <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current">
-                <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
-              </svg>
-              <div className="space-y-2">
-                <h3 className="font-bold">Components</h3>
-                <p className="text-sm text-muted-foreground">
-                  UI components built using Radix UI and styled with Tailwind
-                  CSS.
-                </p>
+          </Link>
+          <Link href="/">
+            <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
+              <div className="flex h-[180px] flex-row  rounded-md p-8">
+                <Icons.book size={48}/>
+                <div className="space-y-2 pl-6">
+                  <h2 className="text-4xl font-bold">Materials</h2>
+                  <p className="text-lg text-muted-foreground">
+                    App dir, Routing, Layouts, Loading UI and API routes.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
-            <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                className="h-12 w-12 fill-current"
-              >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-              <div className="space-y-2">
-                <h3 className="font-bold">Authentication</h3>
-                <p className="text-sm text-muted-foreground">
-                  Authentication using NextAuth.js and middlewares.
-                </p>
+          </Link>
+          <Link href="/">
+            <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
+              <div className="flex h-[180px] flex-row  rounded-md p-8">
+                <Icons.globe size={48}/>
+                <div className="space-y-2 pl-6">
+                  <h2 className="text-4xl font-bold">Beyond We Will</h2>
+                  <p className="text-lg text-muted-foreground">
+                    App dir, Routing, Layouts, Loading UI and API routes.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
-            <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-              <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current">
-                <path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z" />
-              </svg>
-              <div className="space-y-2">
-                <h3 className="font-bold">Subscriptions</h3>
-                <p className="text-sm text-muted-foreground">
-                  Free and paid subscriptions using Stripe.
-                </p>
+          </Link>
+          <Link href="/">
+            <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
+              <div className="flex h-[180px] flex-row  rounded-md p-8">
+                <Icons.users size={48}/>
+                <div className="space-y-2 pl-6">
+                  <h2 className="text-4xl font-bold">Our Team</h2>
+                  <p className="text-lg text-muted-foreground">
+                    App dir, Routing, Layouts, Loading UI and API routes.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="mx-auto text-center md:max-w-[58rem]">
-          <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            Taxonomy also includes a blog and a full-featured documentation site
-            built using Contentlayer and MDX.
-          </p>
+          </Link>
         </div>
       </section>
       <section id="open-source" className="container py-8 md:py-12 lg:py-24">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
           <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            Proudly Open Source
+            지금 바로 신청하세요
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            Taxonomy is open source and powered by open source software. <br />{" "}
-            The code is available on{" "}
+            현재 모집 중입니다. 늦기 전에 신청하세요.<br />{" "}
             <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
-              className="underline underline-offset-4"
-            >
-              GitHub
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeVQteubEN_mSOvbbd8QkG32_-MdxzqtGY4C0qxHalBBDwiFw/viewform"
+              className={cn("m-4", buttonVariants({ size: "lg" }))}>
+              신청하러 가기
             </Link>
-            .{" "}
           </p>
         </div>
       </section>
