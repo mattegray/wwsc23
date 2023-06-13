@@ -22,19 +22,19 @@ export default async function TimeTablePage() {
       <hr className="my-8" />
       <section className="flex flex-col gap-6">
         <div className="flex flex-row gap-10">
-          <p className="text-xs sm:text-sm text-center text-muted-foreground">
+          <p className="text-center text-xs text-muted-foreground sm:text-sm">
             9:00 ~ 9:30
           </p>
           <div className="m-auto">
-            <h2 className="text-xl sm:text-2xl font-bold">출발</h2>
+            <h2 className="text-xl font-bold sm:text-2xl">출발</h2>
           </div>
         </div>
         <div className="flex flex-row gap-10">
-          <p className="text-xs sm:text-sm text-center text-muted-foreground">
+          <p className="text-center text-xs text-muted-foreground sm:text-sm">
             9:30 ~ 10:00
           </p>
           <div className="m-auto">
-            <h2 className="text-xl sm:text-2xl font-bold">시작 모임 (목사님 기도)</h2>
+            <h2 className="text-xl font-bold sm:text-2xl">시작 모임 (목사님 기도)</h2>
           </div>
         </div>
       </section>
