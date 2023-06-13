@@ -22,5 +22,9 @@ export const marketingConfig: MarketingConfig = {
       title: "Beyond We Will",
       href: "/beyond",
     },
+    {
+      title: "Our Team",
+      href: "/team",
+    },
   ],
 }
