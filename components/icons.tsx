@@ -28,6 +28,7 @@ import {
   Book,
   Globe,
   Users,
+  Microwave,
   type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -71,6 +72,7 @@ export const Icons = {
   book: Book,
   globe: Globe,
   users: Users,
+  microwave: Microwave,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"
