@@ -9,10 +9,11 @@ import { Icons } from "@/components/icons"
 
 interface MobileNavProps {
   items: MainNavItem[]
+  toggleMobileMenu: () => void
   children?: React.ReactNode
 }
 
-export function MobileNav({ items, children }: MobileNavProps) {
+export function MobileNav({ items, toggleMobileMenu, children }: MobileNavProps) {
   useLockBody()
 
   return (
@@ -22,7 +23,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
       )}
     >
       <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md">
-        <Link href="/" className="flex space-x-2">
+        <Link href="/" className="flex space-x-2" onClick={toggleMobileMenu}>
           <Icons.logo />
         </Link>
         <nav className="grid grid-flow-row auto-rows-max text-sm">
@@ -34,6 +35,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
                 "flex w-full items-center rounded-md p-2 text-sm font-medium hover:underline",
                 item.disabled && "cursor-not-allowed opacity-60"
               )}
+              onClick={toggleMobileMenu}
             >
               {item.title}
             </Link>
