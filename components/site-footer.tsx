@@ -41,12 +41,12 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             </a>
             . Illustrations by{" "}
             <a
-              href="https://popsy.co"
+              href="https://smartstore.naver.com/shopmoody"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
             >
-              Popsy
+              moody
             </a>
             . The source code is available on{" "}
             <a
