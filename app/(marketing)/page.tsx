@@ -34,6 +34,12 @@ export default async function IndexPage() {
             비전의 이루어짐을 위해 하나님의 가르쳐주시는 것도 중요하지만, 동시에 우리의 ‘의지’가 필요합니다. 
             함께 기도하여 하나님의 일하심에 우리도 응답하는 캠프가 되기를 바랍니다.
           </p>
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeVQteubEN_mSOvbbd8QkG32_-MdxzqtGY4C0qxHalBBDwiFw/viewform"
+            target="_blank"
+            className={cn("m-4", buttonVariants({ size: "lg" }))}>
+            신청하러 가기
+          </Link>
         </div>
       </section>
       <section
@@ -132,6 +138,7 @@ export default async function IndexPage() {
             현재 모집 중입니다. 늦기 전에 신청하세요.<br />{" "}
             <Link
               href="https://docs.google.com/forms/d/e/1FAIpQLSeVQteubEN_mSOvbbd8QkG32_-MdxzqtGY4C0qxHalBBDwiFw/viewform"
+              target="_blank"
               className={cn("m-4", buttonVariants({ size: "lg" }))}>
               신청하러 가기
             </Link>
