@@ -95,7 +95,7 @@ export default async function IndexPage() {
                 <div className="space-y-2 pl-6">
                   <h2 className="text-2xl font-bold sm:text-3xl">Materials</h2>
                   <p className="text-base text-muted-foreground sm:text-xl">
-                    나눔 자료들을 가지고 배정된 그룹과 나눔을 해보세요..
+                    나눔 자료들을 가지고 배정된 그룹과 나눔을 해보세요.
                   </p>
                 </div>
               </div>
