@@ -47,7 +47,7 @@ export default async function IndexPage() {
         className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24"
       >
         <div className="mx-auto grid justify-center gap-4 sm:grid-cols-1 md:max-w-[64rem] md:grid-cols-2">
-          <Link href="/">
+          <Link href="/sessions">
             <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
               <div className="flex h-[180px] flex-row  rounded-md p-8">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 fill-current">
@@ -56,72 +56,72 @@ export default async function IndexPage() {
                 <div className="space-y-2 pl-6">
                   <h2 className="text-2xl font-bold sm:text-3xl">목사님 특강/저녁 집회</h2>
                   <p className="text-base text-muted-foreground sm:text-xl">
-                    App dir, Routing, Layouts, Loading UI and API routes.
+                    여름 캠프의 핵심인 목사님의 특강을 듣고 저녁 집회에 참여하세요.
                   </p>
                 </div>
               </div>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="/timetable">
             <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
               <div className="flex h-[180px] flex-row  rounded-md p-8">
                 <Icons.clock size={48}/>
                 <div className="space-y-2 pl-6">
                   <h2 className="text-2xl font-bold sm:text-3xl">Time Table</h2>
                   <p className="text-base text-muted-foreground sm:text-xl">
-                    App dir, Routing, Layouts, Loading UI and API routes.
+                    캠프에서 진행되는 순서를 확인해 보세요.
                   </p>
                 </div>
               </div>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="/sessions">
             <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
               <div className="flex h-[180px] flex-row  rounded-md p-8">
                 <Icons.monitor size={48}/>
                 <div className="space-y-2 pl-6">
                   <h2 className="text-2xl font-bold sm:text-3xl">Sessions</h2>
                   <p className="text-base text-muted-foreground sm:text-xl">
-                    App dir, Routing, Layouts, Loading UI and API routes.
+                    엘더들이 준비한 특강을 선택해서 들어보세요.
                   </p>
                 </div>
               </div>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="/materials">
             <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
               <div className="flex h-[180px] flex-row  rounded-md p-8">
                 <Icons.book size={48}/>
                 <div className="space-y-2 pl-6">
                   <h2 className="text-2xl font-bold sm:text-3xl">Materials</h2>
                   <p className="text-base text-muted-foreground sm:text-xl">
-                    App dir, Routing, Layouts, Loading UI and API routes.
+                    나눔 자료들을 가지고 배정된 그룹과 나눔을 해보세요..
                   </p>
                 </div>
               </div>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="/beyond">
             <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
               <div className="flex h-[180px] flex-row  rounded-md p-8">
                 <Icons.globe size={48}/>
                 <div className="space-y-2 pl-6">
                   <h2 className="text-2xl font-bold sm:text-3xl">Beyond We Will</h2>
                   <p className="text-base text-muted-foreground sm:text-xl">
-                    App dir, Routing, Layouts, Loading UI and API routes.
+                    We Will 이후에 진행되는 챌린지들을 통해 나의 성장의 기회를 발견해 보세요.
                   </p>
                 </div>
               </div>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="/team">
             <div className="relative overflow-hidden rounded-lg border bg-background p-2 hover:shadow-xl">
               <div className="flex h-[180px] flex-row  rounded-md p-8">
                 <Icons.users size={48}/>
                 <div className="space-y-2 pl-6">
                   <h2 className="text-2xl font-bold sm:text-3xl">Our Team</h2>
                   <p className="text-base text-muted-foreground sm:text-xl">
-                    App dir, Routing, Layouts, Loading UI and API routes.
+                    대학1부 사역팀에 대해 알아보고 등록하세요.
                   </p>
                 </div>
               </div>
