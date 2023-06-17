@@ -1,7 +1,7 @@
 import { SiteConfig } from "types"
 
 export const siteConfig: SiteConfig = {
-  name: "WWSC23",
+  name: "We Will",
   description:
     "An application for WWSC23 (We Will Summer Camp 2023)",
   url: "https://wwsc23.vercel.app",
