@@ -16,11 +16,11 @@ export default async function TimeTablePage() {
       </div>
       <hr className="my-8" />
       <div className="grid gap-10">
-        <TimeTableCard time="9:00 ~ 10:00" event="출발모임" />
-        <TimeTableCard time="10:00 ~ 11:00" event="말씀캠프 장소 이동" />
-        <TimeTableCard time="11:00 ~ 11:30" event="숙소배정 및 짐 풀기" />
-        <TimeTableCard time="11:30 ~ 12:00" event="그룹 모임" />
-        <TimeTableCard time="12:00 ~ 13:30" event="점심식사" />
+        <TimeTableCard time="09:00" event="출발모임" />
+        <TimeTableCard time="10:00" event="말씀캠프 장소 이동" />
+        <TimeTableCard time="11:00" event="숙소배정 및 짐 풀기" />
+        <TimeTableCard time="11:30" event="그룹 모임" />
+        <TimeTableCard time="12:00" event="점심식사" />
         <TimeTableCard time="13:30" event="목사님 특강" />
         <TimeTableCard time="14:30" event="그룹 나눔" />
         <TimeTableCard time="15:30" event="WE(엘더 특강)" />
