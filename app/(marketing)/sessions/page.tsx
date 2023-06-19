@@ -1,4 +1,4 @@
-import { WIP } from "@/components/wip"
+import { SessionCard } from "@/components/session-card"
 
 export const metadata = {
   title: "Sessions",
@@ -18,8 +18,32 @@ export default async function SessionPage() {
         </div>
       </div>
       <hr className="my-8" />
-      <div className="grid gap-10 ">
-        <WIP />
+      <div className="grid gap-10 sm:grid-cols-2">
+        <SessionCard
+          title="성경 인물 탐구와 나눔"
+          imageSrc="/images/sessions/eunji-matt.png"
+          authors={["김은지, 권형우"]}
+        />
+         <SessionCard
+          title="기다림은 길을 엽니다: 취업특강"
+          imageSrc="/images/sessions/eunseo-yebon.png"
+          authors={["고은서, 김예본"]}
+        />
+         <SessionCard
+          title="나의 비전을 세우는 가치"
+          imageSrc="/images/sessions/yeeun-siyun.png"
+          authors={["추예은, 김시윤"]}
+        />
+         <SessionCard
+          title="회복의 시작: 예배"
+          imageSrc="/images/sessions/yongjae.png"
+          authors={["이용재"]}
+        />
+         <SessionCard
+          title="SECRET TIME"
+          imageSrc="/images/sessions/secret.png"
+          authors={["이성권"]}
+        />
       </div>
     </div>
   )
