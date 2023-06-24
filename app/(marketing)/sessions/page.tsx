@@ -20,6 +20,11 @@ export default async function SessionPage() {
       <hr className="my-8" />
       <div className="grid gap-10 sm:grid-cols-2">
         <SessionCard
+          title="성경을 어떻게 읽을 것인가"
+          imageSrc="/images/sessions/pastor.png"
+          authors={["박세흠 목사님"]}
+        />
+        <SessionCard
           title="성경 인물 탐구와 나눔"
           imageSrc="/images/sessions/eunji-matt.png"
           authors={["김은지, 권형우"]}
@@ -42,7 +47,7 @@ export default async function SessionPage() {
          <SessionCard
           title="SECRET TIME"
           imageSrc="/images/sessions/secret.png"
-          authors={["이성권"]}
+          authors={["이성권 전도사님"]}
         />
       </div>
     </div>
