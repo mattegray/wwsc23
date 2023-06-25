@@ -1,3 +1,4 @@
+import { WeWillWeekCard } from "@/components/wewill-week-card"
 import { WIP } from "@/components/wip"
 
 export const metadata = {
@@ -18,8 +19,21 @@ export default async function SessionPage() {
         </div>
       </div>
       <hr className="my-8" />
-      <div className="grid gap-10 ">
-        <WIP />
+      <WIP />
+      <hr className="my-8" />
+      <div className="grid gap-10 sm:grid-cols-2">
+        <WeWillWeekCard
+          key="day-1"
+          day={1}
+          title="논쟁하시는 하나님"
+          date="2023-07-01"
+        />
+        <WeWillWeekCard
+          key="day-2"
+          day={2}
+          title="여호와의 날"
+          date="2023-07-02"
+        />
       </div>
     </div>
   )
