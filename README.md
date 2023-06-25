@@ -1,4 +1,4 @@
-# WWSC23 (We Will Summer Camp 2023)
+# WWSC23 (WeWill Summer Camp 2023)
 
 ## About this project
 This project as an experiment to see how a modern app (with modern web technologies) would be used for Ministry related applications.

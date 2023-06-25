@@ -1,9 +1,9 @@
 import { SiteConfig } from "types"
 
 export const siteConfig: SiteConfig = {
-  name: "We Will",
+  name: "WeWill",
   description:
-    "An application for WWSC23 (We Will Summer Camp 2023)",
+    "WWSC23 (WeWill Summer Camp 2023) Application",
   url: "https://wwsc23.vercel.app",
   ogImage: "https://wwsc23.vercel.app/og.jpg",
   links: {
