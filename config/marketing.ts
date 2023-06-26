@@ -15,12 +15,12 @@ export const marketingConfig: MarketingConfig = {
       href: "/materials",
     },
     {
-      title: "Beyond WeWill",
-      href: "/beyond",
-    },
-    {
       title: "Our Team",
       href: "/team",
+    },
+    {
+      title: "Beyond WeWill",
+      href: "/docs",
     },
   ],
 }
