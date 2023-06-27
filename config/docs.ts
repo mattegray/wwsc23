@@ -21,7 +21,7 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: "개요",
-          href: "/docs/in-progress",
+          href: "/docs/overview",
         },
       ],
     },
@@ -30,7 +30,7 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: "Day 1",
-          href: "/docs/in-progress",
+          href: "/docs/wewill-week/day-1",
         },
         {
           title: "Day 2",
