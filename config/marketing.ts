@@ -19,7 +19,7 @@ export const marketingConfig: MarketingConfig = {
       href: "/team",
     },
     {
-      title: "Beyond WeWill",
+      title: "WeWill Week",
       href: "/docs",
     },
   ],

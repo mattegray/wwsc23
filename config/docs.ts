@@ -3,7 +3,7 @@ import { DocsConfig } from "types"
 export const docsConfig: DocsConfig = {
   mainNav: [
     {
-      title: "WeWill Week",
+      title: "WeWill Week Handbook",
       href: "/docs",
     },
   ],
