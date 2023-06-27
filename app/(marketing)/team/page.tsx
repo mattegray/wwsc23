@@ -13,7 +13,7 @@ export default async function OurTeamPage() {
             Our Team
           </h1>
           <p className="text-lg text-muted-foreground sm:text-xl">
-            대학1부 사역팀에 대해 알아보고 등록하세요.
+            대학1부 사역팀에 대해 알아보고 지원하세요.
           </p>
         </div>
       </div>
