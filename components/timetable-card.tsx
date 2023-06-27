@@ -10,7 +10,7 @@ export function TimeTableCard({ time, event }: TimeTableCardProps) {
         {time}
       </p>
       <div className="m-auto">
-        <h2 className="text-xl text-center font-bold sm:text-2xl">{event}</h2>
+        <h2 className="text-center text-xl font-bold sm:text-2xl">{event}</h2>
       </div>
     </div>
   )
