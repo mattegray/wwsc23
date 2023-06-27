@@ -73,16 +73,16 @@ export default async function IndexPage() {
             description="나눔 자료들을 가지고 배정된 그룹과 나눔을 해보세요."
           />
           <HomeCard
-            href="/beyond"
-            icon={<Icons.globe size={32}/>}
-            heading="Beyond WeWill"
-            description="WeWill 이후에 진행되는 챌린지들을 통해 나의 성장의 기회를 발견해 보세요."
-          />
-          <HomeCard
             href="/team"
             icon={<Icons.users size={32}/>}
             heading="Our Team"
-            description="대학1부 사역팀에 대해 알아보고 등록하세요."
+            description="대학1부 사역팀에 대해 알아보고 지원하세요."
+          />
+          <HomeCard
+            href="/docs"
+            icon={<Icons.globe size={32}/>}
+            heading="WeWill Week"
+            description="WeWill 이후에 진행되는 WeWill Week를 통해 나의 성장의 기회를 발견해 보세요."
           />
         </div>
       </section>
