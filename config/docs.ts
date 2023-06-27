@@ -23,6 +23,10 @@ export const docsConfig: DocsConfig = {
           title: "개요",
           href: "/docs/overview",
         },
+        {
+          title: "참고자료",
+          href: "/docs/references",
+        },
       ],
     },
     {
