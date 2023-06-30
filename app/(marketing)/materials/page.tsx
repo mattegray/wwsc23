@@ -51,6 +51,8 @@ export default async function MaterialPage() {
           </article>
         ))}
       </div>
+      <hr className="my-8" />
+      <p className="text-muted-foreground">인용자료: TNTQ, 신동열 (꿈을 이루는 사람들)</p>
     </div>
   )
 }
