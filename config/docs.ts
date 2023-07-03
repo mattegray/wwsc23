@@ -43,17 +43,14 @@ export const docsConfig: DocsConfig = {
         {
           title: "Day 3",
           href: "/docs/wewill-week/day-3",
-          disabled: true,
         },
         {
           title: "Day 4",
           href: "/docs/wewill-week/day-4",
-          disabled: true,
         },
         {
           title: "Day 5",
           href: "/docs/wewill-week/day-5",
-          disabled: true,
         },
         {
           title: "Day 6",
