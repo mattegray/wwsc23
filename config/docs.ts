@@ -111,42 +111,52 @@ export const docsConfig: DocsConfig = {
         {
           title: "Day 20",
           href: "/docs/wewill-week/day-20",
+          disabled: true,
         },
         {
           title: "Day 21",
           href: "/docs/wewill-week/day-21",
+          disabled: true,
         },
         {
           title: "Day 22",
           href: "/docs/wewill-week/day-22",
+          disabled: true,
         },
         {
           title: "Day 23",
           href: "/docs/wewill-week/day-23",
+          disabled: true,
         },
         {
           title: "Day 24",
           href: "/docs/wewill-week/day-24",
+          disabled: true,
         },
         {
           title: "Day 25",
           href: "/docs/wewill-week/day-25",
+          disabled: true,
         },
         {
           title: "Day 26",
           href: "/docs/wewill-week/day-26",
+          disabled: true,
         },
         {
           title: "Day 27",
           href: "/docs/wewill-week/day-27",
+          disabled: true,
         },
         {
           title: "Day 28",
           href: "/docs/wewill-week/day-28",
+          disabled: true,
         },
         {
           title: "Day 29",
           href: "/docs/wewill-week/day-29",
+          disabled: true,
         },
       ],
     },
