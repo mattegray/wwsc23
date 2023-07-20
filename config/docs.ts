@@ -111,12 +111,10 @@ export const docsConfig: DocsConfig = {
         {
           title: "Day 20",
           href: "/docs/wewill-week/day-20",
-          disabled: true,
         },
         {
           title: "Day 21",
           href: "/docs/wewill-week/day-21",
-          disabled: true,
         },
         {
           title: "Day 22",
